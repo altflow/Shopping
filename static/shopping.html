@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+  <title>Simple Shopping Search</title>
+  <!-- Combo-handled YUI CSS files: -->
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts-grids/reset-fonts-grids.css&2.7.0/build/base/base-min.css&2.7.0/build/assets/skins/sam/skin.css&2.7.0/build/container/assets/skins/sam/container.css">
+  <link id="shopping-css" rel="stylesheet" type="text/css" href="shopping.css"/>
+
+</head>
+<body class="yui-skin-sam">
+<div id="doc2">
+<!-- #doc2 (950px width) -->
+
+  <div id="hd">
+    <div id="headings">
+      <h1 id="page-title">Simple Shopping Search</h1>
+      <h2 id="tag-line">Breadcrumb + Navigation + Continuous Pagination Demo</h2>
+    </div>
+    
+    <div id="search-form">
+      <input id="search-term" type="text" name="term" size="40" value="" />
+      <span>@</span>
+      <input id="shop-selector" type="button" name="shop-selector" value="Select Shop" />
+    </div>
+
+    <div id="breadcrumb"></div>
+    
+  </div>
+  <!-- /#hd -->
+  
+  <div id="bd">
+    <div id="search-results">
+      <p>3文字以上、入力すると自動的に検索します。</p>
+      <p>Input more than 2 characters to search product.</p>
+    </div>
+  </div>
+  <!-- /#bd -->
+  
+  <div id="ft">
+    <div id="credit">
+      <p>Simple Shopping Search, 
+      powered by Amazon Product Advertising API, Google App Engine and Yahoo! UI Library.
+      Icons distributed by <a href="http://splashyfish.com/">Dat Nguyen</a></p>
+    </div>
+  </div>
+  <!-- /#ft -->
+
+</div>
+<!-- /#doc2 -->
+
+<div id="status">
+  <div class="hd"></div>
+  <div id="status-msg" class="bd"></div>
+  <div class="ft"></div>
+</div>
+<div id="go-top"><a href="#doc2">&uarr; page top</a></div>
+
+<!-- Combo-handled YUI JS files: -->
+<script type="text/javascript" src="http://yui.yahooapis.com/combo?2.7.0/build/utilities/utilities.js&2.7.0/build/datasource/datasource-min.js&2.7.0/build/autocomplete/autocomplete-min.js&&2.7.0/build/animation/animation-min.js&2.7.0/build/container/container_core-min.js&2.7.0/build/menu/menu-min.js&2.7.0/build/button/button-min.js&2.7.0/build/json/json-min.js&2.7.0/build/logger/logger-min.js&2.7.0/build/cookie/cookie-min.js"></script>
+
+<script type="text/javascript" src="shopping.js"></script>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-1343416-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
